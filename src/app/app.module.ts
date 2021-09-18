@@ -15,6 +15,6 @@ import { EmployeeComponent } from './employee/employee.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent, EmployeeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }
