@@ -1,0 +1,25 @@
+
+
+<table mdbTable>
+    <thead class="black white-text">
+      <tr>
+        <th *ngFor="let head of headElements" scope="col">{{head}} </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr mdbTableCol *ngFor="let el of elements">
+        <th scope="row">{{el.EmployeeID}}</th>
+        <td>{{el.FirstName}}</td>
+        <td>{{el.LastName}}</td>
+        <td>{{el.Salary}}</td>
+        <td>{{el.DOB}}</td>
+        <td>{{el.Email}}</td>
+        <td>{{el.Action}}</td>
+      </tr>
+    </tbody>
+</table>
+
+<router-outlet></router-outlet>
+  
+ 
+
