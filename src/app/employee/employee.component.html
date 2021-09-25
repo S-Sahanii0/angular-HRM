@@ -1,18 +1,41 @@
-<table mdbTable>
-  <thead class="black white-text">
+<h2>Employees</h2>
+<table mdbTable class="table table-bordered">
+  <thead class="thead-dark">
     <tr>
-      <th *ngFor="let head of headElements" scope="col">{{ head }}</th>
+      <th *ngFor="let head of headElements" scope="col"><span>{{head}} </span> </th>
     </tr>
   </thead>
   <tbody>
-    <tr mdbTableCol *ngFor="let el of elements">
-      <th scope="row">{{ el.EmployeeID }}</th>
-      <td>{{ el.FirstName }}</td>
-      <td>{{ el.LastName }}</td>
-      <td>{{ el.Salary }}</td>
-      <td>{{ el.DOB }}</td>
-      <td>{{ el.Email }}</td>
-      <td>{{ el.Action }}</td>
+    <tr mdbTableCol *ngFor = "let emp of empList" appColor>
+      
+      <th scope="row" >
+        <!-- <input class="input-sm"  [(ngModel)]="emp.id"> -->
+        <span >{{emp.id}}</span>
+      </th>
+      <th scope="row" >
+        <!-- <input class="input-sm"  [(ngModel)]="emp.firstName"> -->
+        <span>{{emp.firstName}}</span>
+      </th>
+      <th scope="row" >
+        <!-- <input class="input-sm"  [(ngModel)]="emp.lastName"> -->
+        <span>{{emp.lastName}}</span>
+      </th>
+      <th scope="row" >
+        <!-- <input class="input-sm"  [(ngModel)]="emp.salary"> -->
+        <span>{{emp.salary}}</span>
+      </th>
+      <th scope="row" >
+        <!-- <input class="input-sm"  [(ngModel)]="emp.dob"> -->
+        <span>{{emp.dob}}</span>
+      </th>
+      
+      
+      
+      <th scope="row" >
+        <!-- <input class="input-sm"  [(ngModel)]="emp.dob"> -->
+        <span>{{emp.email}}</span>
+      </th>
+      
     </tr>
   </tbody>
 </table>
